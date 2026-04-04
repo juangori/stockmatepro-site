@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockMate Pro — Gestion de inventario y ventas para tu comercio</title>
+    <meta name="description" content="Sistema de gestion de inventario, ventas y facturacion electronica para comercios minoristas en Argentina. Escanea codigos, controla stock y factura con ARCA.">
+    <meta name="theme-color" content="#208090">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="StockMate Pro — Gestion de inventario y ventas">
+    <meta property="og:description" content="Sistema completo para comercios minoristas. Stock, ventas, facturacion electronica ARCA, cuentas corrientes y mas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://stockmatepro.com">
+    <meta property="og:locale" content="es_AR">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23208090'/><text x='50%25' y='55%25' font-family='Arial' font-size='18' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='middle'>S</text></svg>">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "StockMate Pro",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "Sistema de gestion de inventario, ventas y facturacion electronica para comercios minoristas en Argentina",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "ARS"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-inner">
+            <a href="#" class="navbar-brand">StockMate Pro</a>
+            <button class="navbar-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="navbar-links" id="navLinks">
+                <li><a href="#funciones">Funciones</a></li>
+                <li><a href="#como-funciona">Como funciona</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#faq">Preguntas frecuentes</a></li>
+            </ul>
+            <a href="https://app.stockmatepro.com" class="btn btn-nav">Ingresar</a>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <h1 class="hero-title">Gestion de inventario y ventas <span class="gradient-text">para tu comercio</span></h1>
+                <p class="hero-subtitle">Controla stock, registra ventas y genera facturas electronicas. Todo desde tu celular o computadora.</p>
+                <div class="hero-buttons">
+                    <a href="https://app.stockmatepro.com" class="btn btn-primary btn-lg">Empezar gratis</a>
+                    <a href="#funciones" class="btn btn-outline btn-lg">Ver funciones</a>
+                </div>
+                <p class="hero-note">Sin tarjeta de credito. Listo en 2 minutos.</p>
+            </div>
+            <div class="hero-visual">
+                <div class="browser-frame">
+                    <div class="browser-dots"><span></span><span></span><span></span></div>
+                    <div class="browser-content">
+                        <div class="mock-dashboard">
+                            <div class="mock-sidebar">
+                                <div class="mock-menu-item active"></div>
+                                <div class="mock-menu-item"></div>
+                                <div class="mock-menu-item"></div>
+                                <div class="mock-menu-item"></div>
+                                <div class="mock-menu-item"></div>
+                            </div>
+                            <div class="mock-main">
+                                <div class="mock-stats">
+                                    <div class="mock-stat-card c1"><div class="mock-stat-value"></div><div class="mock-stat-label"></div></div>
+                                    <div class="mock-stat-card c2"><div class="mock-stat-value"></div><div class="mock-stat-label"></div></div>
+                                    <div class="mock-stat-card c3"><div class="mock-stat-value"></div><div class="mock-stat-label"></div></div>
+                                </div>
+                                <div class="mock-table">
+                                    <div class="mock-table-header"></div>
+                                    <div class="mock-table-row"></div>
+                                    <div class="mock-table-row"></div>
+                                    <div class="mock-table-row"></div>
+                                    <div class="mock-table-row"></div>
+                                    <div class="mock-table-row"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-gradient-bottom"></div>
+    </section>
+
+    <!-- ==================== SOCIAL PROOF ==================== -->
+    <section class="social-proof">
+        <div class="container">
+            <div class="proof-stats">
+                <div class="proof-stat animate-on-scroll">
+                    <span class="proof-number" data-count="50">0</span><span class="proof-plus">+</span>
+                    <span class="proof-label">Comercios activos</span>
+                </div>
+                <div class="proof-divider"></div>
+                <div class="proof-stat animate-on-scroll">
+                    <span class="proof-number" data-count="18000">0</span><span class="proof-plus">+</span>
+                    <span class="proof-label">Productos gestionados</span>
+                </div>
+                <div class="proof-divider"></div>
+                <div class="proof-stat animate-on-scroll">
+                    <span class="proof-number" data-count="5000">0</span><span class="proof-plus">+</span>
+                    <span class="proof-label">Facturas emitidas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURES ==================== -->
+    <section class="features" id="funciones">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Todo lo que necesitas para tu negocio</h2>
+                <p>Un solo sistema para manejar stock, ventas, facturacion y mas.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon"><i data-lucide="scan-barcode"></i></div>
+                    <h3>Escaner de codigos</h3>
+                    <p>Escanea productos con la camara de tu celular o con pistola. Carga y baja de stock instantanea.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon"><i data-lucide="package"></i></div>
+                    <h3>Gestion de inventario</h3>
+                    <p>Control de stock por producto, color y talle. Busqueda rapida entre miles de productos.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon"><i data-lucide="shopping-cart"></i></div>
+                    <h3>Registro de ventas</h3>
+                    <p>Registra ventas, aplica descuentos y lleva el control de tu caja diaria con cierre automatico.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon"><i data-lucide="file-text"></i></div>
+                    <h3>Facturacion electronica</h3>
+                    <p>Genera facturas A, B y C validas ante ARCA (ex AFIP). Integrado directamente sin salir del sistema.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon"><i data-lucide="users"></i></div>
+                    <h3>Cuentas corrientes</h3>
+                    <p>Lleva el saldo de tus clientes. Registra pagos parciales y consulta deudas pendientes.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon"><i data-lucide="wifi-off"></i></div>
+                    <h3>Funciona sin internet</h3>
+                    <p>App instalable que sigue funcionando offline. Tus datos siempre disponibles, incluso sin conexion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== HOW IT WORKS ==================== -->
+    <section class="how-it-works" id="como-funciona">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Empeza en 3 pasos</h2>
+                <p>Sin instalaciones, sin configuraciones complicadas.</p>
+            </div>
+            <div class="steps">
+                <div class="step animate-on-scroll">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Crea tu cuenta</h3>
+                        <p>Registrate gratis en menos de un minuto. Sin tarjeta de credito.</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step animate-on-scroll">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Carga tus productos</h3>
+                        <p>Importa tu catalogo desde un CSV o cargalos manualmente. Soporta colores, talles y codigos de barras.</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step animate-on-scroll">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Empeza a vender</h3>
+                        <p>Registra ventas, controla stock en tiempo real y genera facturas electronicas al instante.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== DEEP DIVES ==================== -->
+    <section class="deep-dives">
+        <div class="container">
+            <div class="deep-dive animate-on-scroll">
+                <div class="deep-dive-text">
+                    <div class="deep-dive-badge">Inventario inteligente</div>
+                    <h2>18.000+ productos sin perder velocidad</h2>
+                    <p>Tabla virtualizada que carga miles de productos sin frenar tu navegador. Edita precios y stock directamente en la tabla con un click. Actualiza precios masivamente por categoria.</p>
+                    <ul class="deep-dive-list">
+                        <li><i data-lucide="check"></i> Edicion inline de precios y stock</li>
+                        <li><i data-lucide="check"></i> Filtros por categoria, busqueda instantanea</li>
+                        <li><i data-lucide="check"></i> Importacion masiva por CSV</li>
+                    </ul>
+                </div>
+                <div class="deep-dive-visual">
+                    <div class="feature-showcase stock-showcase">
+                        <div class="showcase-header">
+                            <span class="showcase-dot green"></span>
+                            <span class="showcase-title">Stock en tiempo real</span>
+                        </div>
+                        <div class="showcase-rows">
+                            <div class="showcase-row"><span>Remera Basic Negro M</span><span class="stock-badge">24</span></div>
+                            <div class="showcase-row"><span>Jean Slim Azul 42</span><span class="stock-badge low">3</span></div>
+                            <div class="showcase-row"><span>Campera Puffer Roja L</span><span class="stock-badge">15</span></div>
+                            <div class="showcase-row"><span>Zapatillas Urban 38</span><span class="stock-badge">42</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="deep-dive reverse animate-on-scroll">
+                <div class="deep-dive-text">
+                    <div class="deep-dive-badge">ARCA / ex AFIP</div>
+                    <h2>Facturacion electronica integrada</h2>
+                    <p>Genera comprobantes validos (Factura A, B y C) directamente desde cada venta. Sin salir del sistema, sin software externo. Cumple con todos los requisitos de ARCA.</p>
+                    <ul class="deep-dive-list">
+                        <li><i data-lucide="check"></i> Facturas A, B y C con CAE</li>
+                        <li><i data-lucide="check"></i> Envio por email al cliente</li>
+                        <li><i data-lucide="check"></i> Historial completo de comprobantes</li>
+                    </ul>
+                </div>
+                <div class="deep-dive-visual">
+                    <div class="feature-showcase invoice-showcase">
+                        <div class="showcase-header">
+                            <span class="showcase-dot blue"></span>
+                            <span class="showcase-title">Factura B</span>
+                            <span class="showcase-cae">CAE: 74120...</span>
+                        </div>
+                        <div class="invoice-detail">
+                            <div class="invoice-row"><span>Remera Basic x2</span><span>$15.800</span></div>
+                            <div class="invoice-row"><span>Jean Slim x1</span><span>$28.900</span></div>
+                            <div class="invoice-divider"></div>
+                            <div class="invoice-row total"><span>Total</span><span>$44.700</span></div>
+                        </div>
+                        <div class="invoice-status">Aprobada por ARCA</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="deep-dive animate-on-scroll">
+                <div class="deep-dive-text">
+                    <div class="deep-dive-badge">Mobile-first</div>
+                    <h2>Tu negocio en el bolsillo</h2>
+                    <p>Instalalo como app en tu celular y usalo como si fuera nativa. Escanea codigos de barras con la camara, registra ventas desde el mostrador y consulta stock en cualquier momento.</p>
+                    <ul class="deep-dive-list">
+                        <li><i data-lucide="check"></i> App instalable (PWA)</li>
+                        <li><i data-lucide="check"></i> Escaneo con camara del celular</li>
+                        <li><i data-lucide="check"></i> Funciona sin conexion a internet</li>
+                    </ul>
+                </div>
+                <div class="deep-dive-visual">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="phone-app-bar">StockMate Pro</div>
+                            <div class="phone-scanner-area">
+                                <div class="scanner-line"></div>
+                                <i data-lucide="scan-barcode" class="phone-scan-icon"></i>
+                            </div>
+                            <div class="phone-product-found">
+                                <span class="phone-product-name">Remera Basic - Negro M</span>
+                                <span class="phone-product-stock">Stock: 24 &rarr; 25</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRICING ==================== -->
+    <section class="pricing" id="precios">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Simple y transparente</h2>
+                <p>Un solo plan con todo incluido. Sin sorpresas.</p>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card animate-on-scroll">
+                    <div class="pricing-header">
+                        <h3>Plan Completo</h3>
+                        <div class="pricing-price">
+                            <span class="pricing-currency">$</span>
+                            <span class="pricing-amount">Gratis</span>
+                        </div>
+                        <p class="pricing-period">durante el lanzamiento</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i data-lucide="check"></i> Productos ilimitados</li>
+                        <li><i data-lucide="check"></i> Escaner de codigos de barras</li>
+                        <li><i data-lucide="check"></i> Registro de ventas y caja</li>
+                        <li><i data-lucide="check"></i> Facturacion electronica ARCA</li>
+                        <li><i data-lucide="check"></i> Cuentas corrientes</li>
+                        <li><i data-lucide="check"></i> Importacion CSV</li>
+                        <li><i data-lucide="check"></i> Backups automaticos</li>
+                        <li><i data-lucide="check"></i> Soporte por email</li>
+                    </ul>
+                    <a href="https://app.stockmatepro.com" class="btn btn-primary btn-lg btn-full">Empezar gratis</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Preguntas frecuentes</h2>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item animate-on-scroll">
+                    <summary>Necesito instalar algo?</summary>
+                    <p>No. StockMate Pro funciona directamente en tu navegador, como una pagina web. Tambien podes instalarlo como app en tu celular o computadora para acceso rapido, pero no es obligatorio.</p>
+                </details>
+                <details class="faq-item animate-on-scroll">
+                    <summary>Funciona en celular?</summary>
+                    <p>Si, esta disenado mobile-first. Podes usarlo desde cualquier celular, tablet o computadora. Incluso podes escanear codigos de barras con la camara del celular.</p>
+                </details>
+                <details class="faq-item animate-on-scroll">
+                    <summary>Puedo importar mis productos actuales?</summary>
+                    <p>Si. Podes importar tu catalogo completo desde un archivo CSV (Excel). El sistema reconoce codigo, descripcion, precio, costo, stock, color, talle y codigo de barras.</p>
+                </details>
+                <details class="faq-item animate-on-scroll">
+                    <summary>Como funciona la facturacion electronica?</summary>
+                    <p>StockMate Pro se conecta directamente con ARCA (ex AFIP) para generar facturas A, B y C con CAE valido. Solo necesitas tu certificado digital y punto de venta habilitado.</p>
+                </details>
+                <details class="faq-item animate-on-scroll">
+                    <summary>Mis datos estan seguros?</summary>
+                    <p>Si. Cada usuario tiene su propia base de datos aislada. Se realizan backups automaticos y la conexion es segura (HTTPS). Tus datos nunca se comparten con otros usuarios.</p>
+                </details>
+                <details class="faq-item animate-on-scroll">
+                    <summary>Puedo usarlo sin internet?</summary>
+                    <p>Si. StockMate Pro es una PWA (Progressive Web App) que funciona offline. Podes consultar tu inventario y registrar operaciones aunque no tengas conexion en ese momento.</p>
+                </details>
+                <details class="faq-item animate-on-scroll">
+                    <summary>Sirve para mi rubro?</summary>
+                    <p>StockMate Pro esta pensado para comercios minoristas: indumentaria, calzado, accesorios, bazares, ferreterias, librerias y cualquier negocio que maneje inventario fisico.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FINAL CTA ==================== -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <h2>Simplifica la gestion de tu negocio</h2>
+                <p>Unite a los comercios que ya usan StockMate Pro para controlar su inventario y ventas.</p>
+                <a href="https://app.stockmatepro.com" class="btn btn-white btn-lg">Empezar gratis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="footer-logo">StockMate Pro</span>
+                    <p>Sistema de gestion de inventario y ventas para comercios minoristas en Argentina.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Producto</h4>
+                    <ul>
+                        <li><a href="#funciones">Funciones</a></li>
+                        <li><a href="#precios">Precios</a></li>
+                        <li><a href="#faq">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:soporte@stockmatepro.com">soporte@stockmatepro.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 StockMate Pro. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
