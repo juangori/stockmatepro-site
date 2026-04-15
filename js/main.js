@@ -75,3 +75,47 @@ document.addEventListener('DOMContentLoaded', () => {
         lucide.createIcons();
     }
 });
+
+// ==================== FORMULARIO DE SOPORTE ====================
+const supportForm = document.getElementById('supportForm');
+if (supportForm) {
+    supportForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const btn = document.getElementById('soporteSubmit');
+        const status = document.getElementById('soporteStatus');
+        const data = {
+            nombre: document.getElementById('soporteNombre').value.trim(),
+            email: document.getElementById('soporteEmail').value.trim(),
+            asunto: document.getElementById('soporteAsunto').value.trim(),
+            mensaje: document.getElementById('soporteMensaje').value.trim(),
+        };
+
+        btn.disabled = true;
+        btn.textContent = 'Enviando...';
+        status.textContent = '';
+        status.className = 'support-status';
+
+        try {
+            const resp = await fetch('https://app.stockmatepro.com/api/soporte', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
+            });
+            const json = await resp.json();
+            if (resp.ok) {
+                status.textContent = '✓ Mensaje enviado. Te responderemos pronto.';
+                status.className = 'support-status support-status-ok';
+                supportForm.reset();
+            } else {
+                status.textContent = json.error || 'Ocurrio un error. Intentá más tarde.';
+                status.className = 'support-status support-status-error';
+            }
+        } catch (err) {
+            status.textContent = 'No pudimos conectar. Escribinos a soporte@stockmatepro.com';
+            status.className = 'support-status support-status-error';
+        } finally {
+            btn.disabled = false;
+            btn.textContent = 'Enviar mensaje';
+        }
+    });
+}
