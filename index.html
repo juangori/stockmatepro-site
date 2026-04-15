@@ -53,6 +53,7 @@
                 <li><a href="#como-funciona">Como funciona</a></li>
                 <li><a href="#precios">Precios</a></li>
                 <li><a href="#faq">Preguntas frecuentes</a></li>
+                <li><a href="#soporte">Soporte</a></li>
             </ul>
             <a href="https://app.stockmatepro.com" class="btn btn-nav">Ingresar</a>
         </div>
@@ -299,17 +300,18 @@
         <div class="container">
             <div class="section-header animate-on-scroll">
                 <h2>Simple y transparente</h2>
-                <p>Un solo plan con todo incluido. Sin sorpresas.</p>
+                <p>Proba gratis 30 dias. Sin tarjeta de credito.</p>
             </div>
-            <div class="pricing-cards">
-                <div class="pricing-card animate-on-scroll">
+            <div class="pricing-cards pricing-cards-dual animate-on-scroll">
+
+                <!-- Card 1: Trial gratuito -->
+                <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3>Plan Completo</h3>
+                        <h3>Prueba gratuita</h3>
                         <div class="pricing-price">
-                            <span class="pricing-currency">$</span>
-                            <span class="pricing-amount">Gratis</span>
+                            <span class="pricing-amount">30 dias</span>
                         </div>
-                        <p class="pricing-period">durante el lanzamiento</p>
+                        <p class="pricing-period">sin tarjeta de credito</p>
                     </div>
                     <ul class="pricing-features">
                         <li><i data-lucide="check"></i> Productos ilimitados</li>
@@ -321,8 +323,33 @@
                         <li><i data-lucide="check"></i> Backups automaticos</li>
                         <li><i data-lucide="check"></i> Soporte por email</li>
                     </ul>
-                    <a href="https://app.stockmatepro.com" class="btn btn-primary btn-lg btn-full">Empezar gratis</a>
+                    <a href="https://app.stockmatepro.com" class="btn btn-outline btn-lg btn-full">Empezar prueba</a>
                 </div>
+
+                <!-- Card 2: Plan mensual (destacado) -->
+                <div class="pricing-card pricing-card-featured">
+                    <div class="pricing-badge">Recomendado</div>
+                    <div class="pricing-header">
+                        <h3>Plan Mensual</h3>
+                        <div class="pricing-price">
+                            <span class="pricing-currency">$</span>
+                            <span class="pricing-amount">44.990</span>
+                        </div>
+                        <p class="pricing-period">por mes · debito automatico</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i data-lucide="check"></i> Productos ilimitados</li>
+                        <li><i data-lucide="check"></i> Escaner de codigos de barras</li>
+                        <li><i data-lucide="check"></i> Registro de ventas y caja</li>
+                        <li><i data-lucide="check"></i> Facturacion electronica ARCA</li>
+                        <li><i data-lucide="check"></i> Cuentas corrientes</li>
+                        <li><i data-lucide="check"></i> Importacion CSV</li>
+                        <li><i data-lucide="check"></i> Backups automaticos</li>
+                        <li><i data-lucide="check"></i> Soporte prioritario</li>
+                    </ul>
+                    <a href="https://app.stockmatepro.com" class="btn btn-primary btn-lg btn-full">Suscribirme</a>
+                </div>
+
             </div>
         </div>
     </section>
@@ -363,6 +390,38 @@
                     <p>StockMate Pro esta pensado para comercios minoristas: indumentaria, calzado, accesorios, bazares, ferreterias, librerias y cualquier negocio que maneje inventario fisico.</p>
                 </details>
             </div>
+        </div>
+    </section>
+
+    <!-- ==================== SOPORTE ==================== -->
+    <section class="support-section" id="soporte">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Necesitas ayuda?</h2>
+                <p>Dejanos un mensaje y te respondemos a la brevedad.</p>
+            </div>
+            <form id="supportForm" class="support-form animate-on-scroll" novalidate>
+                <div class="support-form-row">
+                    <div class="support-form-group">
+                        <label for="soporteNombre">Tu nombre</label>
+                        <input type="text" id="soporteNombre" name="nombre" placeholder="Juan Garcia" required>
+                    </div>
+                    <div class="support-form-group">
+                        <label for="soporteEmail">Tu email</label>
+                        <input type="email" id="soporteEmail" name="email" placeholder="juan@micomercio.com" required>
+                    </div>
+                </div>
+                <div class="support-form-group">
+                    <label for="soporteAsunto">Asunto</label>
+                    <input type="text" id="soporteAsunto" name="asunto" placeholder="Consulta sobre facturacion electronica" required>
+                </div>
+                <div class="support-form-group">
+                    <label for="soporteMensaje">Mensaje</label>
+                    <textarea id="soporteMensaje" name="mensaje" placeholder="Describe tu consulta o problema..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg" id="soporteSubmit">Enviar mensaje</button>
+                <p id="soporteStatus" class="support-status" aria-live="polite"></p>
+            </form>
         </div>
     </section>
 
